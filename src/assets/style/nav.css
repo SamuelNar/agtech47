@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    position: fixed; /* Fijar el navbar en la parte superior */
+    top: 0; /* Asegura que esté en la parte superior */
+    left: -20px;
+    width: 100%; /* Ancho completo de la pantalla */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .menu-icon {
+    margin-right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex; /* Mostrar en línea por defecto */
+  }
+  
+  .nav-item {
+    margin: 0 15px;
+  }
+  
+  .nav-links {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block; /* Mostrar el icono en pantallas pequeñas */     
+    }
+  
+    .nav-menu {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        position: absolute;
+        top: 60px; /* Ajustar según la altura de la navbar */
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        max-height: 0; /* Altura inicial para animación */
+        overflow: hidden; /* Ocultar el contenido que excede la altura */
+        transition: max-height 0.3s ease-out; /* Transición suave */
+    }
+  
+    .nav-menu.active {
+        max-height: 300px; /* Altura máxima cuando está activo (ajustar según necesidad) */
+        transition: max-height 0.5s ease-in; /* Transición suave al abrir */
+    }
+  
+    .nav-item {
+        margin: 10px 0; /* Espaciado vertical para los elementos del menú */
+        text-align: center; /* Centrar texto en el menú */
+    }
+  }

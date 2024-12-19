@@ -1,0 +1,44 @@
+.energia {
+    background-image: url('/Img/fondo3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 20px;
+    background-color: #e2f4fc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 900px;
+    text-align: center;
+}
+
+.energia h4 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.energia p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .energia {
+        padding: 30px 15px;
+    }
+
+    .energia h4 {
+        font-size: 24px;
+    }
+
+    .energia p {
+        font-size: 16px;
+    }
+}

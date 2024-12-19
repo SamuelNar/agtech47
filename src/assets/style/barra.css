@@ -1,0 +1,56 @@
+.barra {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('Img/barraFondo.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: white; /* Contraste con el fondo */
+    text-align: left;
+    gap: 20px; /* Espaciado entre elementos en pantallas pequeñas */
+  }
+  
+  .barra-texto {
+    flex: 1; /* Ocupa el espacio disponible */
+    font-size: 3.8em; /* Tamaño del texto */
+    min-width: 200px; /* Asegura que el texto no se comprima demasiado */
+  }
+  
+  .barra-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .barra-container img {
+    width: 150px; /* Tamaño del círculo */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; /* Borde opcional */
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .barra {
+      flex-direction: column; /* Cambia la dirección a columna */
+      text-align: center; /* Centra el texto */
+    }
+  
+    .barra-texto {
+      font-size: 2em; /* Reduce el tamaño del texto */
+    }
+  
+    .barra-container {
+      justify-content: center; /* Centra las imágenes */
+    }
+  
+    .barra-container img {
+      width: 80px; /* Reduce el tamaño de las imágenes */
+      height: 80px;
+    }
+  }
+  

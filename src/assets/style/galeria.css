@@ -1,0 +1,41 @@
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Establece un máximo de 4 imágenes por fila */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 20px;
+    justify-items: center; /* Centra las imágenes dentro de las celdas */
+  }
+  
+  .galeria img {
+    width: 100%; /* Hace que las imágenes ocupen todo el espacio disponible */
+    height: 200px; /* Fija la altura para que todas las imágenes sean del mismo tamaño */
+    object-fit: cover; /* Asegura que la imagen se recorte y mantenga las proporciones */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al hacer hover */
+  }
+  
+  /* Diseño responsive */
+  @media (max-width: 1024px) {
+    .galeria {
+      grid-template-columns: repeat(3, 1fr); /* 3 imágenes por fila en pantallas más pequeñas */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .galeria {
+      grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila en pantallas móviles */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .galeria {
+      grid-template-columns: 1fr; /* 1 imagen por fila en pantallas muy pequeñas */
+    }
+  }
+  

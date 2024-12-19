@@ -1,0 +1,53 @@
+/* Contenedor principal de la misión */
+.mision {
+    padding: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Imagen dentro de la misión */
+.mision-img img {
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px; /* Borde redondeado para la imagen */
+    margin-top: 20px; /* Añade espacio entre el texto y la imagen */
+}
+
+/* Estilo para el texto dentro de la misión */
+.mision-texto h4 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Elimina el margen en h4 */
+}
+
+/* Estilos para el párrafo y el botón */
+.mision2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.mision2 p {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espacio entre el h4 y el párrafo */
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+
+.mision2 button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #0f66d8;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados para el botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mision2 button:hover {
+    background-color: #1e3a8a;
+}
