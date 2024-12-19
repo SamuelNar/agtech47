@@ -2,7 +2,7 @@ import '../assets/style/mision.css';
 function Mision() {
     return (
         <>
-            <div className="mision">
+           <div className="mision">
                 <div className="mision-texto">
                     <h4>Nuestra misión</h4>
                 </div>
