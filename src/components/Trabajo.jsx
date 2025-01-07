@@ -3,7 +3,7 @@ function Trabajo() {
     return (
         <div className="trabajo">
             <div className='trabajo-img'>
-                <img src="/Img/pasto.jpg" alt="" />
+                <img src="/Img/img8.jpg" alt="" />
             </div>
             <div className="trabajo-container">
                 <h4 className="trabajo-texto">

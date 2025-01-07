@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000000b9;
+    background-color: #4B5945; /* Fondo con el color principal */
     padding: 70px 30px;
     border-radius: 10px;
     box-shadow: 0 60px 1000px rgba(194, 13, 211, 0.1);
@@ -14,7 +14,7 @@
 .inicio-texto {
     font-size: 32px;
     font-weight: bold;
-    color: #ffffff;
+    color: #B2C9AD; /* Color claro para el texto principal */
     margin-bottom: 30px;
     text-align: center;
     line-height: 1.2;
@@ -28,7 +28,7 @@
 
 .inicio-texto2 {
     font-size: 18px;
-    color: #ffffff;
+    color: #91AC8F; /* Color suave para el texto secundario */
     line-height: 1.8;
     margin-bottom: 40px;
     max-width: 800px;
@@ -41,8 +41,8 @@
 }
 
 button {
-    background-color: #0f66d8;
-    color: #000000;
+    background-color: #66785F; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color blanco para el texto del botón */
     font-size: 18px;
     padding: 16px 40px;
     border: none;
@@ -53,7 +53,7 @@ button {
 }
 
 button:hover {
-    background-color: #1e3a8a;
+    background-color: #91AC8F; /* Cambio de color del botón al pasar el mouse */
 }
 
 @media (max-width: 600px) {

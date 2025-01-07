@@ -1,23 +1,25 @@
 .ensayo {
-    background-image: url('/Img/fondo3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     padding: 40px 20px;
-    background-color: #f9fafb;
+    background-color: #4B5945; /* Fondo con color armonizado */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 30px auto;
     max-width: 900px;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .ensayo h4 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Mayor espacio debajo del título */
     font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase; /* Título en mayúsculas */
 }
 
 .ensayo p {

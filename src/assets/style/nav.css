@@ -4,7 +4,7 @@ body {
   }
   
   .navbar {
-    background-color: #000000;
+    background-color:  #4B5945;
     padding: 10px 20px;
     position: fixed; /* Fijar el navbar en la parte superior */
     top: 0; /* Asegura que esté en la parte superior */
@@ -20,13 +20,13 @@ body {
   }
   
   .navbar-logo {
-    color: white;
+    color: #B2C9AD;
     font-size: 24px;
   }
   
   .menu-icon {
     margin-right: 20px;
-    color: white;
+    color:  #B2C9AD;
     font-size: 30px;
     cursor: pointer;
     display: none; /* Ocultar por defecto */
@@ -42,9 +42,13 @@ body {
   }
   
   .nav-links {
-    color: white;
+    color: #91AC8F;
     text-decoration: none;
   }
+
+.nav-links:hover {
+  color: #66785F; /* Cambio de color al pasar el mouse */
+}
   
   /* Estilos para pantallas pequeñas */
   @media screen and (max-width: 768px) {
@@ -58,7 +62,7 @@ body {
         top: 60px; /* Ajustar según la altura de la navbar */
         left: 0;
         width: 100%;
-        background-color: #000000;
+        background-color: #4B5945;
         max-height: 0; /* Altura inicial para animación */
         overflow: hidden; /* Ocultar el contenido que excede la altura */
         transition: max-height 0.3s ease-out; /* Transición suave */
@@ -72,5 +76,12 @@ body {
     .nav-item {
         margin: 10px 0; /* Espaciado vertical para los elementos del menú */
         text-align: center; /* Centrar texto en el menú */
+    }
+    .nav-links {
+      color: #B2C9AD; /* Color claro para los enlaces en dispositivos móviles */
+    }
+  
+    .nav-links:hover {
+      color: #91AC8F; /* Cambio de color en hover para dispositivos móviles */
     }
   }
